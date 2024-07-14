@@ -29,7 +29,7 @@ public class MyService extends Service {
             @Override
             public void run() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    tvTime.setText("Current Time: " + Instant.now());
+                        tvTime.setText("Current Time: " + Instant.now());
                 }
             }
         }, 1, 1, TimeUnit.SECONDS);
